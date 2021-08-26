@@ -1163,6 +1163,14 @@ ul.post-archive{margin-left:0!important;line-height:2 !important;}
 	line-height: 2;
 	margin: auto!important;
 }
+/* ====================== template: Full Width Iframe ====================== 2021.08.26 */
+.single-article .post-wrap.full-width-iframe {
+	max-width: 10000px;
+	padding: 48px 0px;
+	font-size: 1.25rem;
+	line-height: 2;
+	margin: auto!important;
+}
 /* ====================== footer ====================== 2019.04.12 */
 .footer{
 	box-shadow: 0 0px 1px 0 #bbb;

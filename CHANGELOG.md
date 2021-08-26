@@ -6,3 +6,4 @@
 - Fork of https://github.com/huangyuzhang/Fizzy-Theme/
 ### CHANGES
 - Branding
+- Full width iframe
