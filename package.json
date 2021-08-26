@@ -1,0 +1,39 @@
+{
+    "name": "vooka",
+    "description": "Theme for Ghost.",
+    "version": "0.0.1",
+    "author": {
+        "name": "Tyler Banks",
+        "email": "tyler@tylerbanks.net"
+    },
+    "engines": {
+        "ghost": ">=3.0.0",
+        "ghost-api": "v3"
+    },
+    "keywords": [
+        "ghost",
+        "theme",
+        "ghost-theme"
+    ],
+    "dependencies": {},
+    "config": {
+        "posts_per_page": 8,
+        "image_sizes": {
+            "icon": {
+                "width": 64
+            },
+            "small": {
+                "width": 300
+            },
+            "medium": {
+                "width": 600
+            },
+            "large": {
+                "width": 900
+            },
+            "wide": {
+                "width": 1200
+            }
+        }
+    }
+}

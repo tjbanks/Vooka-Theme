@@ -1,0 +1,6 @@
+# Don't track content of these folders
+.vscode
+.DS_Store
+node_modules/
+assets/js/popup.js
+unused/
