@@ -38,6 +38,9 @@
 
             {{!-- Credit Button start --}}
             <div class="navbar-end">
+                {{#if @site.navigation}}
+                {{navigation type="secondary"}}                    
+                {{/if}}
                 <div id="vooka-credit" class="navbar-item has-dropdown is-hoverable is-hidden-mobile btn-vooka is-hidden">
                     <div class="btn-vooka-inner">
                         <a target="_blank" class="btn-vooka-text" rel="noopener">Get Vooka Theme</a>
