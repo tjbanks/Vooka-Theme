@@ -6,43 +6,12 @@
 <section class="hero">
     <article class="single-article">
         <div class="box is-paddingless is-shadowless is-full-mobile is-centered">
-            {{!-- featured_image --}}
-            {{#if feature_image}}
-            <div class="featured-image">
-                <div class="featured-image" style="background-image:url({{img_url feature_image}});">
-                    {{!-- featured post label --}}
-                    {{#if featured}}
-                    <div class="post-wrap full-width is-vpadding-1" style="position:relative;height:inherit;">
-                        <span class="featured-label large is-montserrat" title="Featured Post"><i class="iconfont icon-like"></i> {{t "Featured"}}</span>
-                    </div>
-                    {{/if}}
-                </div>
-            </div>
-            {{/if}}
-
             <div class="columns">
                 <div class="column is-12-tablet is-12-desktop is-12-widescreen is-12-fullhd">
-
-                    <div class="post-wrap full-width is-vpadding-1">
-                        {{!-- title --}}
-                        <h1 class="title is-montserrat">{{title}}</h1>
-                        {{!-- tags --}}
-                        {{#has tag="count:>0"}}
-                        <div class="buttons tags has-text-weight-semibold">
-                            <span class="button is-static is-size-7-mobile" style="min-width:2.5em">
-                                {{#has tag="count:1"}}<i class="iconfont icon-tag"></i>{{/has}}
-                                {{#has tag="count:>1"}}<i class="iconfont icon-tags"></i>{{/has}}
-                            </span>
-                            {{#foreach tags}}
-                            <a href="{{url}}" class="button is-light is-size-7-mobile has-text-weight-semibold">{{name}}</a>
-                            {{/foreach}}
+                    <div class="post-wrap full-width-iframe is-vpadding-0">
+                        <div class="content post-content is-size-6-mobile is-georgia">
+                            {{content}}
                         </div>
-                        {{/has}}
-                    </div>
-
-                    <div class="post-wrap full-width-iframe is-vpadding-1">
-                        {{!-- content --}}
-                        <div class="content post-content is-size-6-mobile is-georgia">{{content}}</div>
                     </div>
                 </div>
             </div>

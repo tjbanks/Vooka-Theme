@@ -20,6 +20,9 @@
 .is-vpaddingless {
     padding-top:0 !important; padding-bottom:0 !important;
 }
+.is-vpadding-0 {
+    padding-top:0rem !important; padding-bottom:0rem !important;
+}
 .is-vpadding-1 {
     padding-top:1rem !important; padding-bottom:1rem !important;
 }
