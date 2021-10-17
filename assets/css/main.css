@@ -1347,11 +1347,24 @@ ul.post-archive{margin-left:0!important;line-height:2 !important;}
 	text-align: center;
     margin-left: auto;
     margin-right: auto;
-	font-size: 1.25em;
 	line-height: 1.5;
 	font-weight: 400;
 	color: var(--secondary-color);
 }
+
+/* Tablet:768px. */
+@media (min-width: 768px) and (max-width: 9999px) {
+	.home-description {
+	  font-size: 1.25em; 
+	 }
+   }
+   
+   /* Mobile :320px. */
+   @media (max-width: 767px) {
+	description {
+	  font-size: 1em;
+	 }
+   }
 
 .icons {
 	cursor: default;
