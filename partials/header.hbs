@@ -1,6 +1,7 @@
 <header>
-    <nav id="navbar" class="navbar is-white is-spaced has-shadow-thin is-montserrat is-fixed-top" style="z-index:999;" role="navigation" aria-label="main navigation">
+    <nav id="navbar" class="navbar is-black is-spaced-thin has-shadow-thin is-montserrat is-fixed-top" style="z-index:999;" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
+            {{!--
             {{#if @site.logo}}
             <div class="navbar-item logo">
                 <a href="{{@site.url}}">
@@ -8,6 +9,7 @@
                 </a>
             </div>
             {{else}}
+            --}}
                 <div class="navbar-item text-logo">
                     <a class="align-vcentered" href="{{@site.url}}" alt="{{@site.title}}" title="{{@site.title}} - {{@site.description}}">
                         {{#if @site.icon}}
@@ -16,8 +18,9 @@
                         {{@site.title}}<span>.</span>
                     </a>
                 </div>
+            {{!--
             {{/if}}
-
+            --}}
             {{!-- burger in mobile devices --}}
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarPrimary">
                 <span aria-hidden="true"></span>
@@ -28,19 +31,22 @@
         </div>
 
         <div id="navbarPrimary" class="navbar-menu">
-
+            
             {{!-- Site Navigation --}}
+            {{!--
             <div class="navbar-start">
                 {{#if @site.navigation}}
                 {{navigation}}                    
                 {{/if}}
             </div>
-
+            --}}
             {{!-- Credit Button start --}}
             <div class="navbar-end">
                 {{#if @site.navigation}}
-                {{navigation type="secondary"}}                    
+                {{navigation type="primary"}}                   
                 {{/if}}
+
+                {{!--
                 <div id="vooka-credit" class="navbar-item has-dropdown is-hoverable is-hidden-mobile btn-vooka is-hidden">
                     <div class="btn-vooka-inner">
                         <a target="_blank" class="btn-vooka-text" rel="noopener">Get Vooka Theme</a>
@@ -70,6 +76,7 @@
                         </a>
                     </div>
                 </div>
+                --}}
             </div>
             {{!-- Credit Button end --}}
 

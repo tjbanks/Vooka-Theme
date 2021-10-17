@@ -8,6 +8,28 @@ into the {body} of the default.hbs template --}}
 {{> showcase}}
 
 {{!-- main --}}
+{{#if @site.logo}}
+<div class="column logo">
+    <a href="{{@site.url}}">
+        <img class="home-image" src="{{@site.logo}}" alt="{{@site.title}}" title="{{@site.title}} - {{@site.description}}" width="auto" height="28">
+    </a>
+</div>
+{{else}}
+
+    <div class="column text-logo">
+        <a class="home-image" href="{{@site.url}}" alt="{{@site.title}}" title="{{@site.title}} - {{@site.description}}">
+            {{#if @site.icon}}
+                <img src="{{@site.icon}}">
+            {{/if}}
+            {{@site.title}}<span>.</span>
+        </a>
+    </div>
+
+{{/if}}
+<div class="column home-description">
+    {{@site.description}}
+</div>
+
 {{#get "posts" include="tags,authors" limit=@config.posts_per_page order="published_at desc"}}
 <main class="section">
     <div class="columns">
@@ -15,7 +37,7 @@ into the {body} of the default.hbs template --}}
         <div class="column is-12-tablet is-10-desktop is-10-widescreen is-8-fullhd">
                 {{#foreach posts}}
                     {{!-- post_item: for index & home cards --}}
-                    {{> list_card}}
+                    {{!--{{> list_card}}--}}
                 {{/foreach}}
         </div>
         <div class="column is-hidden-touch"></div>
@@ -23,9 +45,11 @@ into the {body} of the default.hbs template --}}
 </main>
 
 {{!-- pagination --}}
+{{!--
 <section class="section is-padding-top-05">
     <div class="container">
         {{pagination}}
     </div>
 </section>
+--}}
 {{/get}}

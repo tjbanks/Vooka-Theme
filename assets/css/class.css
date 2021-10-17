@@ -136,6 +136,11 @@
 .has-background-light-line{
     background-image: repeating-linear-gradient(45deg, #f7f7f7, #f7f7f7 2px, #eee 2px, #eee 3px);
 }
+
+.has-background-black{
+    background-image: rgba(0,0,0,.6);;
+}
+
 .bg-cover-center{
     background-size: cover;
     background-position: center center;

@@ -82,6 +82,7 @@ pre[class*="language-"].line-numbers{
 	font-weight:600;
 	box-shadow: 0 0px 1px 0 #ccc;
 }
+
 /* button */
 .button{
 	transition: all .3s ease;
@@ -121,6 +122,13 @@ strong{
 }
 .navbar-dropdown .navbar-item{
 	margin: 0 .5rem;
+}
+
+.has-spaced-navbar-fixed-top-thin {
+	padding-top: 2.25rem;
+}
+.is-spaced-thin {
+	padding:0.1rem 2rem
 }
 
 /* ====================== bulma & Prismjs conflict 2019.05.12 ====================== */
@@ -1174,7 +1182,14 @@ ul.post-archive{margin-left:0!important;line-height:2 !important;}
 /* ====================== footer ====================== 2019.04.12 */
 .footer{
 	box-shadow: 0 0px 1px 0 #bbb;
+	background-color:rgba(0, 0, 0, 0.6)
 }
+
+.footer-black{
+	box-shadow: 0 0px 1px 0 #bbb;
+	background-color:rgba(0, 0, 0, 0.6)
+}
+
 .declare a {
 	color:#666;
 	word-break: break-word;
@@ -1315,4 +1330,64 @@ ul.post-archive{margin-left:0!important;line-height:2 !important;}
 .kg-bookmark-author:after {
 	content: "\2022";
 	margin: 0 6px;
+}
+
+/* ===================== cutsom ================== tyelr 10/17/21 */
+
+.home-image {
+	margin-top: 0.375rem !important;
+	margin-bottom: 0.375rem !important;
+	width: 26.5rem;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-description {
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+	font-size: 1.25em;
+	line-height: 1.5;
+	font-weight: 400;
+	color: var(--secondary-color);
+}
+
+.icons {
+	cursor: default;
+	padding: 0;
+	letter-spacing: 0;
+}
+
+.icons li {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	z-index: 1;
+}
+
+.icons li a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.icons li a svg {
+	display: block;
+	position: relative;
+}
+
+.icons li a + svg {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	pointer-events: none;
+}
+
+.icons li a .label {
+	display: none;
 }
