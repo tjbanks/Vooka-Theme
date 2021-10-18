@@ -131,6 +131,14 @@ strong{
 	padding:0.1rem 2rem
 }
 
+/* Mobile :320px. */
+@media (max-width: 767px) {
+	.is-spaced-thin {
+		padding:0.1rem 0.2rem
+	}
+}
+
+
 .is-blacker {
 	background-color:rgba(0, 0, 0, 0.6) !important;
 }
