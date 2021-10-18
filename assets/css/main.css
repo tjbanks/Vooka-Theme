@@ -11,7 +11,6 @@ Author URI: https://tylerbanks.net
 /* Customized CSS ADD 2019.05.28*/
 @import "custom.css"; 
 @import "class.css"; 
-@import "iconfont.css"; /* ADD 2019.09.25 */
 
 /* ====================== over-write bulma default ====================== */
 /* fix "has-spaced-navbar-fixed-top" cut off the top on mobile devices 2019.04.09 */
