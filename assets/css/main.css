@@ -131,6 +131,10 @@ strong{
 	padding:0.1rem 2rem
 }
 
+.is-blacker {
+	background-color:rgba(0, 0, 0, 0.6) !important;
+}
+
 /* ====================== bulma & Prismjs conflict 2019.05.12 ====================== */
 .content .tag, .content .number {
 	display: inline;
@@ -1187,7 +1191,7 @@ ul.post-archive{margin-left:0!important;line-height:2 !important;}
 
 .footer-black{
 	box-shadow: 0 0px 1px 0 #bbb;
-	background-color:rgba(0, 0, 0, 0.6)
+	background-color:rgba(0, 0, 0, 1)
 }
 
 .declare a {
@@ -1352,8 +1356,39 @@ ul.post-archive{margin-left:0!important;line-height:2 !important;}
 	color: var(--secondary-color);
 }
 
+.home-wrapper {
+	display: grid;
+	gap: 10px;
+	grid-auto-flow: dense;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+  }
+
+/* Full :320px. */
+@media (min-width: 1000px) {
+	.home-wrapper {
+		grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+	}
+}
+
+/* Tablet :320px. */
+@media (min-width: 768px) and (max-width: 999px) {
+	.home-wrapper {
+		grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+	}
+}
+
+/* Mobile :320px. */
+@media (max-width: 767px) {
+	.home-wrapper {
+		grid-template-columns: repeat(auto-fill, minmax(90%, 1fr));
+	}
+}
+
+
 /* Tablet:768px. */
-@media (min-width: 768px) and (max-width: 9999px) {
+@media (min-width: 768px) and (max-width: 999px) {
 	.home-description {
 	  font-size: 1.25em; 
 	 }
@@ -1361,46 +1396,43 @@ ul.post-archive{margin-left:0!important;line-height:2 !important;}
    
    /* Mobile :320px. */
    @media (max-width: 767px) {
-	description {
+	.home-description {
 	  font-size: 1em;
+	  background-color: #000;
 	 }
    }
 
-.icons {
-	cursor: default;
-	padding: 0;
-	letter-spacing: 0;
+.home-tag-label {
+	color:rgba(255, 255, 255, 0.41);
+	font-size: 2em;
+	line-height: 1.625;
+	font-weight: 400;
 }
 
-.icons li {
-	display: inline-block;
-	vertical-align: middle;
-	position: relative;
-	z-index: 1;
+.home-tag-label-hr{
+	color:rgba(255, 255, 255, 0.41);
+	height: 1px;
+	margin: 1rem 0;
+	width: 70%;
+
 }
 
-.icons li a {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.home-post-image img{
+	width: inherit;
+	max-width: 50%;
+	vertical-align: top;
+	border-radius: 3px !important;
+}
+.home-post-description{
+	color:#DDDDDD;
+	font-size: 1em;
+	line-height: 1.625;
+	font-weight: 400;
 }
 
-.icons li a svg {
-	display: block;
-	position: relative;
-}
-
-.icons li a + svg {
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
-	pointer-events: none;
-}
-
-.icons li a .label {
-	display: none;
+.home-post{
+	color: rgba(255, 255, 255, 0.41);
+	font-size: 0.75em;
+	line-height: 1.625;
+	font-weight: 400;
 }

@@ -10,9 +10,9 @@ into the {body} of the default.hbs template --}}
 {{!-- main --}}
 {{#if @site.logo}}
 <div class="column logo">
-    <a href="{{@site.url}}">
+    {{!--<a href="{{@site.url}}">--}}
         <img class="home-image" src="{{@site.logo}}" alt="{{@site.title}}" title="{{@site.title}} - {{@site.description}}" width="auto" height="28">
-    </a>
+    {{!--</a>--}}
 </div>
 {{else}}
 
@@ -28,6 +28,38 @@ into the {body} of the default.hbs template --}}
 {{/if}}
 <div class="column home-description">
     {{@site.description}}
+</div>
+
+<div class="column">
+    <div class="grid">
+        <ul class="home-wrapper">
+        {{#get "posts" include="tags" filter="title:hometags" }}
+            {{#foreach posts}}
+                {{#foreach tags}}
+                    <li>
+                    <div class="home-tag-label">{{name}}</div>
+                    <hr class="home-tag-label-hr" />
+                    {{#get "posts" include="tags" filter="primary_tag:{{slug}}+title:-hometags" }}
+                        <div class="row">
+                            {{#foreach posts}}
+                                <a href="{{url}}">
+                                    <div class="home-post-image">
+                                        {{#if feature_image}}
+                                            <img src="{{feature_image}}">
+                                        {{/if}}
+                                    </div>
+                                    <div class="home-post-description">{{excerpt}}</div>
+                                    <div class="home-post">{{title}}</div>
+                                </a>
+                            {{/foreach}}
+                        </div>
+                    {{/get}}
+                    </li>
+                {{/foreach}}
+            {{/foreach}}
+        {{/get}}
+        </ul>
+    </div>
 </div>
 
 {{#get "posts" include="tags,authors" limit=@config.posts_per_page order="published_at desc"}}

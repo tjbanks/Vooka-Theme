@@ -13,6 +13,12 @@ Theme for Ghost :ghost:
 
 Download the `.zip` file and upload it at your Ghost Admin > Setting > Design.
 
+## NEW Features
+
+### The `hometags` post
+Creating a post with the title `hometags` and adding tags to this post will show other posts categorized on the homepage based on the `hometags` tags. Only the primary tag will get selected for display on the homepage.
+
+
 ## Features and Usage
 
 ### Logo
