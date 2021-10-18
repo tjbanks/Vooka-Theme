@@ -138,7 +138,7 @@
 }
 
 .has-background-black{
-    background-image: rgb(0,0,0) important!;
+    background-color: rgb(17, 18, 23) important!;
 }
 
 .bg-cover-center{
