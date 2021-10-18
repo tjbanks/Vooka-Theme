@@ -262,7 +262,7 @@ html,body{
 	font-size:1.5rem;
 }
 .navbar-brand .navbar-item a {
-	color: var(--text-black);
+	color: var(--text-grafana-grey);
 }
 .navbar-brand .navbar-item span {
 	color:var(--main-color);
@@ -1403,7 +1403,7 @@ ul.post-archive{margin-left:0!important;line-height:2 !important;}
    }
 
 .home-tag-label {
-	color:rgba(255, 255, 255, 0.41);
+	color: var(--text-grafana-grey);
 	font-size: 2em;
 	line-height: 1.625;
 	font-weight: 400;
