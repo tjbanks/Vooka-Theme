@@ -18,6 +18,12 @@ Download the `.zip` file and upload it at your Ghost Admin > Setting > Design.
 ### The `hometags` post
 Creating a post with the title `hometags` and adding tags to this post will show other posts categorized on the homepage based on the `hometags` tags. Only the primary tag will get selected for display on the homepage.
 
+### Full-width iframe post template
+
+Inserting something like the following as the only content on the page will result in a full width iframe.
+```
+<iframe width="100%" src="https://duckduckgo.com" style="height: 1000px"></iframe>
+```
 
 ## Features and Usage
 
